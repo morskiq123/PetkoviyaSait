@@ -1,0 +1,493 @@
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    border-bottom: 10px solid #00492C;
+    box-shadow: 0 10px 30px rgba(0,73,44,0.5);
+    padding: 60px 0px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    width: 100%;
+    height: inherit;
+}
+
+nav {
+    background-color: #BB9F60;
+    display: flex;
+    justify-content: flex-end;
+    align-items: right;
+}
+
+h2 {
+    font-size: 60px;
+    color: #00492C;
+    font-weight: 600;
+    padding: 0px 60px;
+}
+
+h3 {
+    color: #00492C;
+    font-size: 50px;
+    font-weight: 900;
+    border-bottom: 4px solid #94772C;
+    display: inline-block;
+    position: relative;
+    padding: 0px 100px 40px;
+}
+
+.heading-container {
+    text-align: center;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+h5 {
+    margin-top: 10px;
+    font-weight: 100;
+}
+
+.secondary-btn {
+    display: flex;
+    background-color: #00492C;
+    border: none;
+    color: #ebe8d8;
+    padding: 15px 45px;
+    text-align: center;
+    text-decoration: bold;
+    display: inline-block;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+    padding: 10px 30px;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 20px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#banner {
+    /* Replace 'your-image-url.jpg' with the URL of your image */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: left;
+    justify-content: space-evenly;
+    height: 900px;
+    padding: 30px 90px;
+    background-image: url('./images/page1sqoosh.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner .content-wrapper * {
+    margin: 50px 0px;
+}
+
+#banner .img-div {
+    width: 15%;
+    height: auto;
+}
+
+#banner p {
+    font-size: 35px;
+    font-style: italic;
+    color: #eceadb;
+    margin: 0px;
+}
+
+#banner h1 {
+    font-size: 80px;
+    color: #eceadb;
+    font-weight: 100;
+    margin: 0px;
+}
+
+#banner .btn-div button {
+    background-color: #94782C;
+    border: none;
+    color: #ebe8d8;
+    padding: 20px 70px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+nav .fa-solid {
+    display: none;
+}
+
+@media(max-width:700px) {
+    p {
+        font-size: 16px;
+        font-style: italic;
+        color: #eceadb;
+        padding-left: 90px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    h1 {
+        font-size: 30px;
+        color: #eceadb;
+        font-weight: 100;
+        padding: 5px 0px 0px 90px;
+        line-height: 150%;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    #banner img {
+        width: 35%;
+        height: auto;
+        padding-left: 90px;
+    }
+
+    .nav-links ul li a {
+        font-size: 20px;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        background: #BB9F60;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+    }
+
+    nav .fa-solid {
+        color: white;
+        display: block;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul {
+        padding: 30px;
+    }
+}
+
+
+/* 2ra stranica  */
+
+#for-us {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 60px 150px;
+}
+
+#for-us .content-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 460px;
+}
+
+.img-div {
+    width: 50%;
+}
+
+
+#for-us .ul-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+#for-us .ul-container>ul>li {
+    color: #00492C;
+    width: inherit;
+    font-size: 25px;
+    padding: 5px 0px;
+}
+
+
+/* 3ta stranica */
+
+#for-us-more {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+#for-us-more .ul-button-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 90px;
+}
+
+#for-us-more>.ul-button-container>ul>li {
+    color: #00492C;
+    font-size: 25px;
+    padding: 5px 0px;
+}
+
+#for-us-more img {
+    flex: 1;
+}
+
+#for-us-more .ul-button-container button {
+    width: 215px;
+    position: absolute;
+    bottom: 90px;
+    left: 90px;
+}
+
+
+/* 4ta stranica */
+
+#team {
+    text-align: center;
+}
+
+.row {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.col {
+    width: 15%;
+}
+
+.col .img-container {
+    position: relative;
+}
+
+.col .text-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #00492C;
+    color: #eceadb;
+    padding: 20px;
+
+}
+
+.col p {
+    color: #00492C;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 20px 0px 20px 0px;
+}
+
+/* stranica 5 */
+
+#real-estate-redirect {
+    display: flex;
+    background-image: url('./images/page55.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+    padding: 30px 90px;
+}
+
+.spacer .apartament-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+    font-weight: 100;
+    font-size: 80px;
+}
+
+.spacer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#real-estate-redirect .spacer .apartament-banner {
+    padding: 0px 0px;
+    margin-bottom: 20px;
+}
+
+#real-estate-redirect .spacer button {
+    display: flex;
+    background-color: #94782C;
+    border: none;
+    color: #ebe8d8;
+    padding: 15px 90px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    margin: 35px 2px;
+    cursor: pointer;
+}
+
+/* stranica 5 */
+
+#client-reviews {
+    text-align: center;
+}
+
+.recommendations {
+    color: #00492C;
+    font-size: 50px;
+    font-weight: 900;
+    border-bottom: 4px solid #94772C;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+/* stranica 6 */
+#client-reviews {
+    text-align: center;
+    padding: 60px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.row-review {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.col-review .img-container {
+    width: 20%;
+    padding-top: 60px;
+}
+
+.col-review {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70%;
+    width: 22%;
+    background-color: #C1D0BD;
+    margin: 0px 20px;
+    padding: 0px 20px;
+}
+
+.review-content h4 {
+    margin: 50px 10px;
+    font-weight: 600;
+    text-align: left;
+    color: #00492C;
+}
+
+.review-content p {
+    color: #00492C;
+}
+
+/* stranica 7 */
+
+#contacts {
+    display: flex;
+    justify-content: space-between;
+    height: 900px;
+    padding: 30px 90px;
+    background-image: url('./images/page7.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#contacts .img-div {
+    width: 15%;
+    height: auto;
+    order: 1;
+}
+
+.contact-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    order: 2;
+    width: 50%;
+    padding-top: 40px;
+}
+
+.contact-heading h3 {
+    color: #FFFFFF;
+    padding: 0px 40px 40px;
+}
+
+#contacts .img-div img {
+    height: auto;
+    order: 1;
+}
+
+.contact-info {
+    display: flex;
+    height: 60%;
+}
+
+.contact-info ul {
+    list-style: none;
+    /* removes bullet points */
+}
+
+.contact-info li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-info img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.contact-info a:hover {
+    color: #BB9F60;
+}
