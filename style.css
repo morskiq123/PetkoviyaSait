@@ -4,8 +4,13 @@ html {
 
 section {
     border-bottom: 10px solid #00492C;
-    box-shadow: 0 10px 30px rgba(0,73,44,0.5);
+    box-shadow: 0 10px 30px rgba(0, 73, 44, 0.5);
     padding: 60px 0px;
+    height: 100vh;
+}
+
+footer {
+    height: 100vh;
 }
 
 * {
@@ -31,6 +36,7 @@ h2 {
     color: #00492C;
     font-weight: 600;
     padding: 0px 60px;
+    margin-bottom: 30px;
 }
 
 h3 {
@@ -45,6 +51,10 @@ h3 {
 
 .heading-container {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 h4 {
@@ -55,6 +65,11 @@ h4 {
 h5 {
     margin-top: 10px;
     font-weight: 100;
+}
+
+button a {
+    color: #ebe8d8;
+    text-decoration: none;
 }
 
 .secondary-btn {
@@ -97,7 +112,6 @@ h5 {
     flex-wrap: wrap;
     align-items: left;
     justify-content: space-evenly;
-    height: 900px;
     padding: 30px 90px;
     background-image: url('./images/page1sqoosh.webp');
     background-repeat: no-repeat;
@@ -106,7 +120,7 @@ h5 {
 }
 
 #banner .content-wrapper * {
-    margin: 50px 0px;
+    margin: 5px 0px;
 }
 
 #banner .img-div {
@@ -128,6 +142,10 @@ h5 {
     margin: 0px;
 }
 
+#banner .btn-div {
+    margin-top: 20px;
+}
+
 #banner .btn-div button {
     background-color: #94782C;
     border: none;
@@ -145,60 +163,12 @@ nav .fa-solid {
     display: none;
 }
 
-@media(max-width:700px) {
-    p {
-        font-size: 16px;
-        font-style: italic;
-        color: #eceadb;
-        padding-left: 90px;
-        font-family: 'Montserrat', sans-serif;
-    }
-
-    h1 {
-        font-size: 30px;
-        color: #eceadb;
-        font-weight: 100;
-        padding: 5px 0px 0px 90px;
-        line-height: 150%;
-        font-family: 'Montserrat', sans-serif;
-    }
-
-    #banner img {
-        width: 35%;
+@media(max-width:600px) {
+    #banner .img-div {
+        width: 60%;
         height: auto;
-        padding-left: 90px;
     }
 
-    .nav-links ul li a {
-        font-size: 20px;
-    }
-
-    .nav-links ul li {
-        display: block;
-    }
-
-    .nav-links {
-        position: absolute;
-        background: #BB9F60;
-        height: 100vh;
-        width: 200px;
-        top: 0;
-        right: 0;
-        text-align: left;
-        z-index: 2;
-    }
-
-    nav .fa-solid {
-        color: white;
-        display: block;
-        margin: 10px;
-        font-size: 22px;
-        cursor: pointer;
-    }
-
-    .nav-links ul {
-        padding: 30px;
-    }
 }
 
 
@@ -207,8 +177,7 @@ nav .fa-solid {
 #for-us {
     display: flex;
     flex-direction: column;
-    align-items: left;
-    padding: 60px 150px;
+    justify-content: center;
 }
 
 #for-us .content-wrapper {
@@ -216,7 +185,6 @@ nav .fa-solid {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    height: 460px;
 }
 
 .img-div {
@@ -238,6 +206,15 @@ nav .fa-solid {
     padding: 5px 0px;
 }
 
+@media(max-width:600px) {
+    #for-us .ul-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-evenly;
+        padding-left: 50px;
+    }
+}
 
 /* 3ta stranica */
 
@@ -267,21 +244,21 @@ nav .fa-solid {
 }
 
 #for-us-more .ul-button-container button {
-    width: 215px;
     position: absolute;
     bottom: 90px;
     left: 90px;
 }
 
+@media(max-width:600px) {
+    #for-us-more img {
+        display: none;
+    }
+}
 
 /* 4ta stranica */
 
-#team {
-    text-align: center;
-}
-
 .row {
-    margin-top: 50px;
+    margin-top: 15vh;
     display: flex;
     justify-content: space-evenly;
 }
@@ -312,6 +289,38 @@ nav .fa-solid {
     padding: 20px 0px 20px 0px;
 }
 
+@media (max-width: 600px) {
+    #team {
+        flex-direction: column;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5vh;
+    }
+
+    .col {
+        width: 30%;
+        /* you can adjust as needed */
+        margin-bottom: 20px;
+        /* space between stacked columns */
+    }
+
+    .col .text-container {
+        position: static;
+        /* let's try static positioning for smaller screens */
+        padding: 10px;
+    }
+
+    .col p {
+        font-size: 12px;
+        /* adjust as needed */
+        padding: 10px 0;
+        /* adjust as needed */
+    }
+}
+
 /* stranica 5 */
 
 #real-estate-redirect {
@@ -320,7 +329,6 @@ nav .fa-solid {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 900px;
     padding: 30px 90px;
 }
 
@@ -379,7 +387,7 @@ nav .fa-solid {
 /* stranica 6 */
 #client-reviews {
     text-align: center;
-    padding: 60px 100px;
+    padding: 15vh 100px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -420,12 +428,58 @@ nav .fa-solid {
     color: #00492C;
 }
 
+@media (max-width: 600px) {
+
+    #client-reviews {
+        padding: 10vh 20px;
+        /* reduce padding for smaller screens */
+    }
+
+    .row-review {
+        flex-direction: column;
+        /* stack the review columns vertically */
+        align-items: center;
+        /* center the columns */
+        margin-top: 30px;
+        /* reduce top margin for smaller screens */
+    }
+
+    .col-review {
+        width: 80%;
+        /* increase width to take up more space on smaller screens */
+        height: auto;
+        /* allow the height to adjust automatically */
+        margin: 20px 0;
+        /* add vertical spacing between stacked columns */
+    }
+
+    .col-review .img-container {
+        width: 60%;
+        /* increase width to better fit the .col-review on smaller screens */
+        padding-top: 30px;
+        /* reduce padding for smaller screens */
+    }
+
+    .review-content h4 {
+        margin: 30px 10px;
+        /* reduce margin for smaller screens */
+        font-size: 18px;
+        /* reduce font size for smaller screens */
+    }
+
+    .review-content p {
+        font-size: 14px;
+        /* reduce font size for smaller screens */
+    }
+
+}
+
+
 /* stranica 7 */
 
 #contacts {
     display: flex;
     justify-content: space-between;
-    height: 900px;
     padding: 30px 90px;
     background-image: url('./images/page7.png');
     background-repeat: no-repeat;
@@ -490,4 +544,69 @@ nav .fa-solid {
 
 .contact-info a:hover {
     color: #BB9F60;
+}
+
+@media (max-width: 600px) {
+
+    #contacts {
+        flex-direction: column;
+        /* stack the elements vertically */
+        align-items: center;
+        /* center the elements */
+        padding: 30px 10px;
+        /* reduce padding for smaller screens */
+        background: #00492C;
+        justify-content: space-evenly;
+    }
+
+    #contacts .img-div {
+        width: 80%;
+        /* increase width to better fit the smaller screen */
+        order: 2;
+        /* change order */
+    }
+
+    .contact-heading {
+        width: 90%;
+        /* increase width to better fit the smaller screen */
+        padding-top: 20px;
+        /* reduce padding for smaller screens */
+        order: 1;
+        /* change order */
+    }
+
+    .contact-heading h3 {
+        padding: 0px 10px 20px;
+        /* reduce padding for smaller screens */
+    }
+
+    .contact-info {
+        flex-direction: column;
+        /* stack the elements vertically */
+        width: 80%;
+        /* increase width to better fit the smaller screen */
+    }
+
+    .contact-info li {
+        /* stack the image and text vertically */
+        align-items: flex-start;
+        /* align items to the left */
+        margin-bottom: 20px;
+        /* increase margin-bottom for vertical layout */
+    }
+
+    .contact-info img {
+        width: 45px;
+        height: 45px;
+        margin-right: 0;
+        /* remove margin-right for vertical layout */
+        margin-bottom: 10px;
+        /* add margin-bottom for vertical layout */
+    }
+
+    .contact-info a {
+        font-size: 30px;
+        /* decrease font size for smaller screens */
+    }
+
 }
