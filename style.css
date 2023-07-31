@@ -88,7 +88,7 @@ button a {
 .nav-links {
     flex: 1;
     text-align: right;
-    padding: 10px 30px;
+    padding: 5px 30px;
 }
 
 .nav-links ul li {
@@ -102,11 +102,10 @@ button a {
     color: white;
     text-decoration: none;
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 #banner {
-    /* Replace 'your-image-url.jpg' with the URL of your image */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -167,6 +166,24 @@ nav .fa-solid {
     #banner .img-div {
         width: 60%;
         height: auto;
+    }
+
+    .nav-links {
+        flex: 1;
+        padding: 10px 30px;
+    }
+
+    .nav-links ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 0px 10px;
+    }
+
+    .nav-links ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 600;
     }
 
 }
@@ -292,10 +309,11 @@ nav .fa-solid {
 @media (max-width: 600px) {
     #team {
         flex-direction: column;
+        display: flex;
+        justify-content: space-evenly;
     }
 
     .row {
-        flex-direction: column;
         align-items: center;
         margin-top: 5vh;
     }
@@ -520,7 +538,6 @@ nav .fa-solid {
 
 .contact-info ul {
     list-style: none;
-    /* removes bullet points */
 }
 
 .contact-info li {
@@ -550,63 +567,50 @@ nav .fa-solid {
 
     #contacts {
         flex-direction: column;
-        /* stack the elements vertically */
         align-items: center;
-        /* center the elements */
-        padding: 30px 10px;
-        /* reduce padding for smaller screens */
         background: #00492C;
-        justify-content: space-evenly;
-    }
-
-    #contacts .img-div {
-        width: 80%;
-        /* increase width to better fit the smaller screen */
-        order: 2;
-        /* change order */
     }
 
     .contact-heading {
         width: 90%;
-        /* increase width to better fit the smaller screen */
         padding-top: 20px;
-        /* reduce padding for smaller screens */
         order: 1;
-        /* change order */
     }
+
+    #contacts .img-div {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        order: 1;
+    }
+
 
     .contact-heading h3 {
         padding: 0px 10px 20px;
-        /* reduce padding for smaller screens */
     }
 
     .contact-info {
         flex-direction: column;
-        /* stack the elements vertically */
         width: 80%;
-        /* increase width to better fit the smaller screen */
     }
 
     .contact-info li {
-        /* stack the image and text vertically */
         align-items: flex-start;
-        /* align items to the left */
-        margin-bottom: 20px;
-        /* increase margin-bottom for vertical layout */
+        margin-bottom: 0px;
     }
 
     .contact-info img {
         width: 45px;
         height: 45px;
         margin-right: 0;
-        /* remove margin-right for vertical layout */
         margin-bottom: 10px;
-        /* add margin-bottom for vertical layout */
     }
 
     .contact-info a {
-        font-size: 30px;
-        /* decrease font size for smaller screens */
+        font-size: 20px;
+        margin-bottom: 15px;
     }
 
 }
