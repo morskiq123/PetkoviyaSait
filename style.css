@@ -162,7 +162,7 @@ nav .fa-solid {
     display: none;
 }
 
-@media(max-width:600px) {
+@media(max-width:920px) {
     #banner .img-div {
         width: 60%;
         height: auto;
@@ -186,6 +186,35 @@ nav .fa-solid {
         font-weight: 600;
     }
 
+}
+
+@media (max-width: 420px) {
+    #banner {
+        padding: 15px 20px;
+        /*  tva mu smenyame stoinostite */
+    }
+
+    #banner .content-wrapper * {
+        margin: 25px 0px;
+    }
+
+    #banner h1 {
+        font-size: 50px;
+        /* namalen e */
+    }
+
+    #banner .btn-div {
+        margin-top: 40px;
+        /* digame mu margina */
+    }
+
+    .nav-links {
+        padding: 10px 30px;
+    }
+
+    .nav-links {
+        text-align: -webkit-center;
+    }
 }
 
 
@@ -223,7 +252,7 @@ nav .fa-solid {
     padding: 5px 0px;
 }
 
-@media(max-width:600px) {
+@media(max-width:920px) {
     #for-us .ul-container {
         display: flex;
         flex-direction: column;
@@ -266,7 +295,7 @@ nav .fa-solid {
     left: 90px;
 }
 
-@media(max-width:600px) {
+@media(max-width:920px) {
     #for-us-more img {
         display: none;
     }
@@ -306,7 +335,7 @@ nav .fa-solid {
     padding: 20px 0px 20px 0px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 920px) {
     #team {
         flex-direction: column;
         display: flex;
@@ -320,22 +349,17 @@ nav .fa-solid {
 
     .col {
         width: 30%;
-        /* you can adjust as needed */
         margin-bottom: 20px;
-        /* space between stacked columns */
     }
 
     .col .text-container {
         position: static;
-        /* let's try static positioning for smaller screens */
         padding: 10px;
     }
 
     .col p {
         font-size: 12px;
-        /* adjust as needed */
         padding: 10px 0;
-        /* adjust as needed */
     }
 }
 
@@ -386,6 +410,22 @@ nav .fa-solid {
     cursor: pointer;
 }
 
+@media (max-width: 420px) {
+    .spacer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .spacer .apartament-banner {
+
+        font-size: 35px;
+    }
+}
+
+
 /* stranica 5 */
 
 #client-reviews {
@@ -400,6 +440,18 @@ nav .fa-solid {
     display: inline-block;
     position: relative;
     padding-bottom: 40px;
+}
+
+@media (max-width: 420px) {
+    .recommendations {
+        color: #00492C;
+        font-size: 22px;
+        font-weight: 900;
+        border-bottom: 4px solid #94772C;
+        display: inline-block;
+        position: relative;
+        padding-bottom: 40px;
+    }
 }
 
 /* stranica 6 */
@@ -446,52 +498,38 @@ nav .fa-solid {
     color: #00492C;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 920px) {
 
     #client-reviews {
         padding: 10vh 20px;
-        /* reduce padding for smaller screens */
     }
 
     .row-review {
         flex-direction: column;
-        /* stack the review columns vertically */
         align-items: center;
-        /* center the columns */
         margin-top: 30px;
-        /* reduce top margin for smaller screens */
     }
 
     .col-review {
         width: 80%;
-        /* increase width to take up more space on smaller screens */
         height: auto;
-        /* allow the height to adjust automatically */
         margin: 20px 0;
-        /* add vertical spacing between stacked columns */
     }
 
     .col-review .img-container {
         width: 60%;
-        /* increase width to better fit the .col-review on smaller screens */
         padding-top: 30px;
-        /* reduce padding for smaller screens */
     }
 
     .review-content h4 {
         margin: 30px 10px;
-        /* reduce margin for smaller screens */
         font-size: 18px;
-        /* reduce font size for smaller screens */
     }
 
     .review-content p {
         font-size: 14px;
-        /* reduce font size for smaller screens */
     }
-
 }
-
 
 /* stranica 7 */
 
@@ -563,7 +601,7 @@ nav .fa-solid {
     color: #BB9F60;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 920px) {
 
     #contacts {
         flex-direction: column;
@@ -593,7 +631,7 @@ nav .fa-solid {
 
     .contact-info {
         flex-direction: column;
-        width: 80%;
+        /* width: 80%; */
     }
 
     .contact-info li {
@@ -613,4 +651,120 @@ nav .fa-solid {
         margin-bottom: 15px;
     }
 
+}
+
+@media (max-width: 420px) {
+    #contacts .img-div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        order: 1;
+    }
+
+    .contact-info {
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 375px) {
+    #banner .content-wrapper * {
+        margin: 25px 0px;
+    }
+
+    #banner p {
+        font-size: 25px;
+    }
+
+    #banner h1 {
+        font-size: 40px;
+    }
+
+    #real-estate-redirect {
+        padding: 30px 66px;
+        /*smenyame mu paddinga za da se centrira */
+    }
+
+    .recommendations {
+        font-size: 18px;
+        /* namalyame font siza */
+    }
+
+    h3 {
+        font-size: 30px;
+        /* promenyma siz-a */
+    }
+
+    .contact-info img {
+        width: 40px;
+        height: 40px;
+        margin-right: 0;
+    }
+
+    .contact-info a {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    #for-us .ul-container>ul>li {
+        font-size: 19px;
+        /* namalyame go */
+    }
+
+    #for-us-more>.ul-button-container>ul>li {
+        font-size: 19px;
+        /* sushtoto */
+    }
+
+    #for-us-more {
+        display: flex;
+        /* nz dali tryabva */
+        justify-content: space-between;
+        /* nz dali tryabva */
+        align-items: baseline;
+        /* tova e promyanata */
+        position: relative;
+    }
+
+    .col {
+        width: 25%;
+    }
+
+    #for-us {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    .contact-heading {
+        display: contents;
+    }
+
+    .contact-info ul {
+        margin-top: 25px
+    }
+}
+
+@media(min-width: 1200px) {
+    #for-us .ul-container>ul>li {
+        color: #00492C;
+        width: inherit;
+        font-size: 20px;
+        padding: 5px 0px;
+    }
+
+    .contact-heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        order: 2;
+        width: 35%;
+        padding-top: 40px;
+    }
 }
