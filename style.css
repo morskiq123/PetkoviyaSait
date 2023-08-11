@@ -735,6 +735,12 @@ nav .fa-solid {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        padding: 0px 0px 60px 0px;
+    }
+
+    #for-us-more .ul-button-container button {
+        bottom: 140px;
+        left: 70px;
     }
 
     h2 {
