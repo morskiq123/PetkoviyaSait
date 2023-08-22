@@ -6,11 +6,12 @@ section {
     border-bottom: 10px solid #00492C;
     box-shadow: 0 10px 30px rgba(0, 73, 44, 0.5);
     padding: 60px 0px;
-    height: 100vh;
+    min-height: 100vh;
+    box-sizing: border-box;
 }
 
 footer {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 * {
@@ -77,11 +78,11 @@ button a {
     background-color: #00492C;
     border: none;
     color: #ebe8d8;
-    padding: 15px 45px;
+    padding: 10px 33px;
     text-align: center;
     text-decoration: bold;
     display: inline-block;
-    font-size: 22px;
+    font-size: 15px;
     cursor: pointer;
 }
 
@@ -109,14 +110,14 @@ button a {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: left;
-    justify-content: space-evenly;
-    padding: 30px 90px;
     background-image: url('./images/page1sqoosh.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding-left: 30px;
 }
+
+
 
 #banner .content-wrapper * {
     margin: 5px 0px;
@@ -149,22 +150,51 @@ button a {
     background-color: #94782C;
     border: none;
     color: #ebe8d8;
-    padding: 20px 70px;
+    padding: 10px 35px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 22px;
+    font-size: 13px;
     margin: 4px 2px;
     cursor: pointer;
+    font-weight: bold;
 }
 
 nav .fa-solid {
     display: none;
 }
 
+#banner .content-wrapper {
+    align-items: unset;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-wrapper .img-div {
+    width: 80%;
+}
+
+.content-wrapper .ul-container {
+    padding-top: 30px;
+    color: #00492C;
+    font-size: 25px;
+}
+
+.content-wrapper .ul-container .btn-div {
+    margin-top: 30px;
+}
+
 @media(max-width:920px) {
+    #banner {
+        min-height: 80vh;
+    }
+
     #banner .img-div {
-        width: 60%;
+        width: 40%;
         height: auto;
     }
 
@@ -176,81 +206,25 @@ nav .fa-solid {
     .nav-links ul li {
         list-style: none;
         display: inline-block;
-        padding: 0px 10px;
+        padding: 0px 0px;
+        font-weight: 600;
+        text-transform: uppercase;
     }
 
     .nav-links ul li a {
         color: white;
         text-decoration: none;
-        font-size: 16px;
+        font-size: 10px;
         font-weight: 600;
     }
 
-}
-
-@media (max-width: 420px) {
-    #banner {
-        padding: 15px 20px;
-        /*  tva mu smenyame stoinostite */
-    }
-
-    #banner .content-wrapper * {
-        margin: 25px 0px;
-    }
-
-    #banner h1 {
-        font-size: 50px;
-        /* namalen e */
-    }
-
-    #banner .btn-div {
-        margin-top: 40px;
-        /* digame mu margina */
-    }
-
-    .nav-links {
-        padding: 10px 30px;
-    }
-
-    .nav-links {
-        text-align: -webkit-center;
+    .nav-links ul {
+        display: flex;
+        justify-content: space-around;
     }
 }
 
 
-/* 2ra stranica  */
-
-#for-us {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#for-us .content-wrapper {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.img-div {
-    width: 50%;
-}
-
-
-#for-us .ul-container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: space-evenly;
-}
-
-#for-us .ul-container>ul>li {
-    color: #00492C;
-    width: inherit;
-    font-size: 25px;
-    padding: 5px 0px;
-}
 
 @media(max-width:920px) {
     #for-us .ul-container {
@@ -296,6 +270,11 @@ nav .fa-solid {
 }
 
 @media(max-width:920px) {
+
+    #for-us-more {
+        display: none;
+    }
+
     #for-us-more img {
         display: none;
     }
@@ -345,6 +324,7 @@ nav .fa-solid {
     .row {
         align-items: center;
         margin-top: 5vh;
+        flex-direction: column;
     }
 
     .col {
@@ -401,28 +381,13 @@ nav .fa-solid {
     background-color: #94782C;
     border: none;
     color: #ebe8d8;
-    padding: 15px 90px;
+    padding: 10px 45px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 22px;
+    font-size: 13px;
     margin: 35px 2px;
     cursor: pointer;
-}
-
-@media (max-width: 420px) {
-    .spacer {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: flex-start;
-        flex-wrap: wrap;
-    }
-
-    .spacer .apartament-banner {
-
-        font-size: 35px;
-    }
 }
 
 
@@ -440,18 +405,6 @@ nav .fa-solid {
     display: inline-block;
     position: relative;
     padding-bottom: 40px;
-}
-
-@media (max-width: 420px) {
-    .recommendations {
-        color: #00492C;
-        font-size: 22px;
-        font-weight: 900;
-        border-bottom: 4px solid #94772C;
-        display: inline-block;
-        position: relative;
-        padding-bottom: 40px;
-    }
 }
 
 /* stranica 6 */
@@ -511,13 +464,13 @@ nav .fa-solid {
     }
 
     .col-review {
-        width: 80%;
+        width: 60%;
         height: auto;
         margin: 20px 0;
     }
 
     .col-review .img-container {
-        width: 60%;
+        width: 40%;
         padding-top: 30px;
     }
 
@@ -553,7 +506,7 @@ nav .fa-solid {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     order: 2;
     width: 50%;
     padding-top: 40px;
@@ -567,6 +520,7 @@ nav .fa-solid {
 #contacts .img-div img {
     height: auto;
     order: 1;
+    display: none;
 }
 
 .contact-info {
@@ -593,7 +547,7 @@ nav .fa-solid {
 .contact-info a {
     color: white;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 600;
 }
 
@@ -606,12 +560,12 @@ nav .fa-solid {
     #contacts {
         flex-direction: column;
         align-items: center;
-        background: #00492C;
+        background-image: url('images/6.png');
     }
 
     .contact-heading {
         width: 90%;
-        padding-top: 20px;
+        padding-top: 0px;
         order: 1;
     }
 
@@ -631,6 +585,7 @@ nav .fa-solid {
 
     .contact-info {
         flex-direction: column;
+        padding-top: 30px;
         /* width: 80%; */
     }
 
@@ -651,9 +606,123 @@ nav .fa-solid {
         margin-bottom: 15px;
     }
 
+    #banner p {
+        font-size: 25px;
+    }
+
 }
 
 @media (max-width: 420px) {
+
+    h2 {
+        color: #00492C;
+        font-size: 30px;
+        font-weight: 900;
+        border-bottom: 2px solid #94772C;
+        text-align: center;
+        width: 38%;
+    }
+
+    h3 {
+        font-size: 30px;
+        padding: 40px 40px;
+    }
+
+    #banner {
+        padding: 15px 20px;
+        background-image: url('images/1.png');
+        box-sizing: border-box;
+        border: none;
+        box-shadow: none;
+        /*  tva mu smenyame stoinostite */
+    }
+
+    #banner h1 {
+        font-size: 40px;
+    }
+
+    #banner .content-wrapper * {
+        margin: 10px 0px;
+    }
+
+    #banner .btn-div {
+        margin-top: 40px;
+    }
+
+    .nav-links {
+        padding: 10px 0px;
+    }
+
+    .nav-links {
+        text-align: -webkit-center;
+    }
+
+    /* 2ra stranica  */
+
+    #for-us {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #for-us .content-wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .img-div {
+        width: 80%;
+        padding-bottom: 30px;
+    }
+
+
+    #for-us .ul-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-evenly;
+    }
+
+    .secondary-btn {
+        margin: 30px 50px;
+
+    }
+
+    #for-us .ul-container>ul>li {
+        color: #00492C;
+        width: inherit;
+        font-size: 19px;
+        padding: 5px 0px;
+    }
+
+    .spacer {
+        display: flex;
+        flex-direction: column;
+        justify-content: unset;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .spacer .apartament-banner {
+        border: none;
+        font-size: 35px;
+        width: unset;
+        text-align: unset;
+    }
+
+    .recommendations {
+        color: #00492C;
+        font-size: 22px;
+        font-weight: 900;
+        border-bottom: 4px solid #94772C;
+        display: inline-block;
+        position: relative;
+        padding-bottom: 40px;
+    }
+
     #contacts .img-div {
         width: 100%;
         display: flex;
@@ -661,39 +730,16 @@ nav .fa-solid {
         align-items: center;
         height: auto;
         order: 1;
+        display: none;
     }
 
     .contact-info {
         flex-direction: column;
     }
-}
-
-@media(max-width: 375px) {
-    #banner .content-wrapper * {
-        margin: 25px 0px;
-    }
-
-    #banner p {
-        font-size: 25px;
-    }
-
-    #banner h1 {
-        font-size: 40px;
-    }
 
     #real-estate-redirect {
-        padding: 30px 66px;
+        padding: 30px 40px;
         /*smenyame mu paddinga za da se centrira */
-    }
-
-    .recommendations {
-        font-size: 18px;
-        /* namalyame font siza */
-    }
-
-    h3 {
-        font-size: 30px;
-        /* promenyma siz-a */
     }
 
     .contact-info img {
@@ -703,49 +749,31 @@ nav .fa-solid {
     }
 
     .contact-info a {
-        font-size: 15px;
         margin-bottom: 15px;
-    }
-
-    #for-us .ul-container>ul>li {
-        font-size: 19px;
-        /* namalyame go */
     }
 
     #for-us-more>.ul-button-container>ul>li {
         font-size: 19px;
-        /* sushtoto */
     }
 
     #for-us-more {
-        display: flex;
-        /* nz dali tryabva */
+        display: none;
         justify-content: space-between;
-        /* nz dali tryabva */
         align-items: baseline;
-        /* tova e promyanata */
         position: relative;
-    }
-
-    .col {
-        width: 25%;
-    }
-
-    #for-us {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        padding: 0px 0px 60px 0px;
     }
 
     #for-us-more .ul-button-container button {
         bottom: 140px;
         left: 70px;
     }
+}
 
-    h2 {
-        font-size: 50px;
-    }
+/* @media(max-width: 375px) {
+
+/* 
+
+
 
     .contact-heading {
         display: contents;
@@ -754,7 +782,7 @@ nav .fa-solid {
     .contact-info ul {
         margin-top: 25px
     }
-}
+} */
 
 @media(min-width: 1200px) {
     #for-us .ul-container>ul>li {
