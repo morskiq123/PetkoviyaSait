@@ -3,7 +3,7 @@ html {
 }
 
 section {
-    border-bottom: 10px solid #00492C;
+    /* border-bottom: 10px solid #00492C; */
     box-shadow: 0 10px 30px rgba(0, 73, 44, 0.5);
     padding: 60px 0px;
     min-height: 100vh;
@@ -664,7 +664,6 @@ nav .fa-solid {
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        border-bottom: 0px;
     }
 
     #for-us .content-wrapper {
