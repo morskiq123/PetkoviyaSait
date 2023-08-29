@@ -590,7 +590,6 @@ nav .fa-solid {
     }
 
     .contact-info li {
-        align-items: flex-start;
         margin-bottom: 0px;
     }
 
@@ -612,7 +611,7 @@ nav .fa-solid {
 
 }
 
-@media (max-width: 420px) {
+@media (max-width: 428px) {
 
     h2 {
         color: #00492C;
@@ -800,5 +799,17 @@ nav .fa-solid {
         order: 2;
         width: 35%;
         padding-top: 40px;
+    }
+}
+
+@media (max-width: 375px) {
+    .contact-info img {
+        width: 25px;
+        height: 25px;
+        margin-right: 0;
+    }
+
+    .contact-info a {
+        font-size: 15px;
     }
 }
